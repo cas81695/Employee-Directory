@@ -22,6 +22,8 @@ The app is deployed on Heroku with the link:
 *[Contribution](#contribution)
 
 
+<img width="1440" alt="Screen Shot 2020-05-13 at 11 47 40 PM" src="https://user-images.githubusercontent.com/58318559/81890635-6f0ba300-9574-11ea-8bd3-aab87f1f8698.png">
+
 
 
 ## Installation

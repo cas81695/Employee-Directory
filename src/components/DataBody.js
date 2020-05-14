@@ -1,10 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import "../styles/DataBody.css";
-import DataAreaContext from "../utils/DataAreaContext";
 
-const DataBody = () => {
-  const context = useContext(DataAreaContext);
-
+function DataBody({ users }) {
   function formatDate(date) {
     const dateArray = date.split("-");
     const year = dateArray[0];
@@ -17,8 +14,8 @@ const DataBody = () => {
 
   return (
     <tbody>
-      {context.developerState.filteredUsers[0] !== undefined && context.developerState.filteredUsers[0].name !== undefined ? (
-        context.developerState.filteredUsers.map(({ login, name, picture, phone, email, dob }) => {
+      {users[0] !== undefined && users[0].name !== undefined ? (
+        users.map(({ login, name, picture, phone, email, dob }) => {
           return (
             <tr key={login.uuid}>
               <td data-th="Image" className="align-middle">
